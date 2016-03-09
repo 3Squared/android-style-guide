@@ -64,7 +64,7 @@ Advantages
      This naming scheme could be easily supported by the Android Studio
     offering features such as: lint rules to enforce these names,
     refactoring support when you change a `WHAT` or `WHERE`, better
-    resource visualisation in project view,...
+    resource visualisation in project view.
 
 
 Layouts
