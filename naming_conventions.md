@@ -200,20 +200,20 @@ Examples:
 Known limitations
 -----------------
 
-1.  **Screens need to have unique names**\
+1.  **Screens need to have unique names**
      To avoid collisions in the `<WHERE>` argument, View (like) classes
     must have unique names. Therefore you cannot have a "MainActivity"
     and a "MainFragment", because the "Main" prefix would no longer
     uniquely identify one `<WHERE>`.
 
-2.  **Refactoring not supported**\
+2.  **Refactoring not supported**
      Changing class names does not change along resource names
     when refactoring. So if you rename "MainActivity" to
     "ContentActivity", the layout "activity\_main" won't be renamed
     to "activity\_content". Hopefully Android Studio will one day add
     support for this.
 
-3.  **Not all resource types supported**\
+3.  **Not all resource types supported**
      The proposed scheme currently does not yet support all
     resource types. For some resources this is because they are less
     frequently used and tend to be very varied (e.g. raw and assets).
