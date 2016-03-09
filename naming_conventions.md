@@ -35,32 +35,39 @@ Advantages
 ----------
 
 1.  **Ordering of resources by screen**
+
      The `WHERE` part describes what screen a resource belongs to. Hence
     it is easy to get all IDs, drawables, dimensions,... for a
     particular screen.
 2.  **Strongly typed resource IDs**
+
      For resource IDs, the `WHAT` describes the class name of the xml
     element it belongs to. This makes is easy to what to cast your
     `findViewById()` calls to.
 3.  **Better resource organizing**
+
      File browsers/project navigator usually sort files alphabetically.
     This means layouts and drawables are grouped by their `WHAT`
     (activity, fragment,..) and `WHERE` prefix respectively. A simple
     Android Studio plugin/feature can now display these resources as if
     they were in their own folder.
 4.  **More efficient autocomplete**
+
      Because resource names are far more predictable, using the IDE's
     autocomplete becomes even easier. Usually entering the `WHAT` or
     `WHERE` is sufficient to narrow autocomplete down to a limited set
     of options.
 5.  **No more name conflicts**
+
      Similar resources in different screens are either `all` or have a
     different `WHERE`. A fixed naming scheme avoids all
     naming collisions.
 6.  **Cleaner resource names**
+
      Overall all resources will be named more logical, causing a cleaner
     Android project.
 7.  **Tools support**
+
      This naming scheme could be easily supported by the Android Studio
     offering features such as: lint rules to enforce these names,
     refactoring support when you change a `WHAT` or `WHERE`, better
@@ -201,12 +208,14 @@ Known limitations
 -----------------
 
 1.  **Screens need to have unique names**
+
      To avoid collisions in the `<WHERE>` argument, View (like) classes
     must have unique names. Therefore you cannot have a "MainActivity"
     and a "MainFragment", because the "Main" prefix would no longer
     uniquely identify one `<WHERE>`.
 
 2.  **Refactoring not supported**
+
      Changing class names does not change along resource names
     when refactoring. So if you rename "MainActivity" to
     "ContentActivity", the layout "activity\_main" won't be renamed
@@ -214,6 +223,7 @@ Known limitations
     support for this.
 
 3.  **Not all resource types supported**
+
      The proposed scheme currently does not yet support all
     resource types. For some resources this is because they are less
     frequently used and tend to be very varied (e.g. raw and assets).
