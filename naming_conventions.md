@@ -6,8 +6,8 @@ Basic Principle
 All resource names are constructed from various components.
 
 #### `<WHAT>`
-Indicate what the resource actually represents. This is often a standard Android view class. Limited 
-options per resource type.
+Indicate what the resource actually represents. This is often a standard Android view class. There are
+limited options per resource type. See the examples below for more detail.
 
 #### `<WHERE>`
 Describe where the resource logically belongs in the app. Resources used in multiple screens use `all`, 
@@ -23,25 +23,25 @@ Advantages
 ----------
 
 1.  **Ordering of resources by screen**    
-	The `WHERE` part describes what screen a resource belongs to. Hence it is easy to get all IDs, drawables, 
+	The `<WHERE>` part describes what screen a resource belongs to. Hence it is easy to get all IDs, drawables, 
 	dimensions, etc. for a particular screen.
 
 2.  **Strongly typed resource IDs**    
-	For resource IDs, the `WHAT` describes the class name of the xml element it belongs to. This makes it
+	For resource IDs, the `<WHAT>` describes the class name of the xml element it belongs to. This makes it
 	easy to identify what to cast your `findViewById()` calls to.
 
 3.  **Better resource organizing**    
 	File browsers/project navigator usually sort files alphabetically. This means layouts and drawables 
-	are grouped by their `WHAT` (activity, fragment, etc.) and `WHERE` prefix respectively. A simple Android 
+	are grouped by their `<WHAT>` (activity, fragment, etc.) and `<WHERE>` prefix respectively. A simple Android 
 	Studio plugin/feature could even display these resources as if they were in their own folder.
 
 4.  **More efficient autocomplete**    
 	Because resource names are far more predictable, using the IDE's autocomplete becomes even easier. 
-	Usually entering the `WHAT or `WHERE` is sufficient to narrow autocomplete down to a limited set of 
+	Usually entering the `<WHAT>` or `<WHERE>` is sufficient to narrow autocomplete down to a limited set of 
 	options.
 
 5.  **No more name conflicts**    
-	Similar resources in different screens are either `all` or have a different `WHERE`. A fixed naming 
+	Similar resources in different screens are either `all` or have a different `<WHERE>`. A fixed naming 
 	scheme avoids all naming collisions.
 
 6.  **Cleaner resource names**    
@@ -49,7 +49,7 @@ Advantages
 
 7.  **Tools support**    
 	This naming scheme could easily be supported by Android Studio offering features such as: lint rules to 
-	enforce these names, refactoring support when you change a `WHAT` or `WHERE` and better resource 
+	enforce these names, refactoring support when you change a `<WHAT>` or `<WHERE>` and better resource 
 	visualisation in project view.
 
 
@@ -103,6 +103,9 @@ information about an employee, you could have:
 -  **employeeform\_personal\_address**: address of individual
 -  **employeeform\_company\_name**: name of company
 
+In the example above, the `personal` and `company` parts of the ID pertain to different sections of 
+the `employeeform` layout.
+
 Drawables
 ---------
 For drawables, we use either `<WHERE>` to indicate where the drawable will be used:
@@ -135,7 +138,7 @@ Examples:
 IDs
 ---
 For IDs, `<WHAT>` is the class name of the xml element it belongs to. `<DESCRIPTION>` is used to distinguish 
-similar elements in one screen. `<DESCRIPTION>` can be split into multiple parts for improved heirarchy.
+similar elements in one screen. `<DESCRIPTION>` can be split into multiple parts for improved hierarchy.
 
 ### `<WHAT>_<WHERE>_<DESCRIPTION>`
 
