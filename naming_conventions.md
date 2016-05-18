@@ -157,11 +157,11 @@ dimensions `all` by default.
 
 Therefore you should mostly use:
 
-### `<WHAT>_all_<DESCRIPTION>_<SIZE>`
+### `all_<WHAT>_<DESCRIPTION>_<SIZE>`
 
 and optionally use the screen specific variant:
 
-### `<WHAT>_<WHERE>_<DESCRIPTION>_<SIZE>`
+### `<WHERE>_<WHAT>_<DESCRIPTION>_<SIZE>`
 
 Where `<WHAT>` is one of the following:
 
