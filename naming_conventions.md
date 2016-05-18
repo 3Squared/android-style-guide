@@ -116,8 +116,8 @@ or `all` if the drawable is reused throughout the app:
 
 ### `all_<DESCRIPTION>`
 
-`<WHAT>` can be prepended to `<DESCRIPTION>` in cases where the drawable has firm type. For example: icons,
-backgrounds, selectors and dividers.
+`<WHAT>` can be prepended to `<DESCRIPTION>` in cases where the drawable has a firm type (e.g. icons,
+backgrounds, selectors, dividers etc.).
 
 ### `<WHERE>_<WHAT>_<DESCRIPTION>`
 
@@ -137,8 +137,9 @@ Examples:
 
 IDs
 ---
-For IDs, `<WHAT>` is the class name of the xml element it belongs to. `<DESCRIPTION>` is used to distinguish 
-similar elements in one screen. `<DESCRIPTION>` can be split into multiple parts for improved hierarchy.
+For IDs, `<WHAT>` is the class name of the xml element it belongs to. `<WHERE>` describes the screen or 
+section of the app the ID belongs in. `<DESCRIPTION>` is used to distinguish similar elements in one screen. 
+`<DESCRIPTION>` can be split into multiple parts for improved hierarchy.
 
 ### `<WHAT>_<WHERE>_<DESCRIPTION>`
 
