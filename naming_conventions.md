@@ -185,9 +185,9 @@ A `<SIZE>` argument can optionally be added. This can be an actual size (e.g. "2
 
 Examples:
 
--  **height\_all\_toolbar**: height of all toolbars
--  **keyline\_listtext**: listitem text is aligned at this keyline
--  **textsize\_medium**: medium size of all text
--  **size\_menu\_icon**: size of icons in menu
--  **spacing\_all_100**: the default spacing at 100% used throughout the app
--  **height\_menu\_profileimage**: height of profile image in menu
+-  **all\_height\_toolbar**: height of all toolbars
+-  **listtext\_keyline**: listitem text is aligned at this keyline
+-  **all\_textsize\_medium**: medium size of all text
+-  **menu\_size\_icon**: size of icons in menu
+-  **all_spacing\_100**: the default spacing at 100% used throughout the app
+-  **menu\_height\_profileimage**: height of profile image in menu
